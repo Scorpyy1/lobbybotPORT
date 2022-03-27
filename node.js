@@ -74,7 +74,7 @@ function startbot(){
   }
 
   const clientOptions = {
-    status: 'Visit AthenaFN For your Own Lobby🤖',
+    status: 'Balls',
     platform: 'IOS',
     cachePresences: false,
     kairos: {
@@ -89,7 +89,7 @@ function startbot(){
   try {
     clientOptions.auth.deviceAuth = JSON.parse(await readFile('./deviceAuth.json'));
   } catch (e) {
-    clientOptions.auth.authorizationCode = async () => Client.consoleQuestion('Please enter the account code you recieved from AthenaFN: ');
+    clientOptions.auth.authorizationCode = async () => Client.consoleQuestion('');
   }
 
   const client = new Client(clientOptions);
